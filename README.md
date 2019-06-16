@@ -1,5 +1,5 @@
 # shiny-verse
-Shiny-Server with Tidyverse dependencies, based on [Rocker Shiny Docker container](https://hub.docker.com/r/rocker/shiny) for CyVerse VICE. VICE requires additional configuration files to be compatible with our Condor and Kubernetes orchestration.
+Shiny-Server with Tidyverse dependencies, based on [Rocker Shiny Verse Docker container](https://hub.docker.com/r/rocker/shiny-verse) for CyVerse VICE. VICE requires additional configuration files to be compatible with our Condor and Kubernetes orchestration.
 
 [![CircleCI](https://circleci.com/gh/cyverse-vice/shiny-verse.svg?style=svg)](https://circleci.com/gh/cyverse-vice/shiny-verse) [![license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://opensource.org/licenses/GPL-3.0) [![Project Supported by CyVerse](https://img.shields.io/badge/Supported%20by-CyVerse-blue.svg)](https://www.cyverse.org) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3246936.svg)](https://doi.org/10.5281/zenodo.3246936)
 
