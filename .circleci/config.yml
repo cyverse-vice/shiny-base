@@ -1,8 +1,49 @@
 version: 2
 jobs:
-  build:
+  build0:
     docker:
       - image: cyversevice/shiny-verse:latest
     steps:
       - checkout
       - run: shiny-server --version
+  build5:
+    docker:
+      - image: cyversevice/shiny-verse:3.6.0
+    steps:
+      - checkout
+      - run: rstudio-server version
+  build4:
+    docker:
+      - image: cyversevice/shiny-verse:3.5.3
+    steps:
+      - checkout
+      - run: rstudio-server version
+  build3:
+    docker:
+      - image: cyversevice/shiny-verse:3.5.2
+    steps:
+      - checkout
+      - run: rstudio-server version
+  build2:
+    docker:
+      - image: cyversevice/shiny-verse:3.5.1
+    steps:
+      - checkout
+      - run: rstudio-server version
+  build1:
+    docker:
+      - image: cyversevice/shiny-verse:3.5.0
+    steps:
+      - checkout
+      - run: rstudio-server version
+workflows:
+  version: 2
+  build0_to_build9:
+    jobs:
+      - build0
+      - build1
+      - build2
+      - build3
+      - build4
+      - build5
+      
